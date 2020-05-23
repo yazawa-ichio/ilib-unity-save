@@ -70,7 +70,7 @@ namespace ILib.Save
 			return PlayerPrefs.GetInt(ToHash(key), def ? 1 : 0) == 1;
 		}
 
-		public int GetInt(string key,int def = 0)
+		public int GetInt(string key, int def = 0)
 		{
 			return PlayerPrefs.GetInt(ToHash(key), def);
 		}

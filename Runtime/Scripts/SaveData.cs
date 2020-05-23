@@ -160,7 +160,8 @@ namespace ILib.Save
 		/// </summary>
 		public void DeleteKeys()
 		{
-			foreach (var key in System.Enum.GetValues(typeof(T))) {
+			foreach (var key in System.Enum.GetValues(typeof(T)))
+			{
 				var keyStr = m_KeyPrefix() + SaveKeyAttribute.ToKey(key);
 				m_Store.Delete(keyStr);
 			}

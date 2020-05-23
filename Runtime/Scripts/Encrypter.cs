@@ -13,7 +13,7 @@ namespace ILib.Save
 		PaddingMode m_Padding;
 		Func<string, string> m_HashProvider;
 
-		public Encrypter(string iv, string key,CipherMode mode = CipherMode.CBC , PaddingMode padding = PaddingMode.PKCS7, Func<string, string> hashProvider = null)
+		public Encrypter(string iv, string key, CipherMode mode = CipherMode.CBC, PaddingMode padding = PaddingMode.PKCS7, Func<string, string> hashProvider = null)
 		{
 			m_IV = Convert.FromBase64String(iv);
 			m_Key = Convert.FromBase64String(key);
